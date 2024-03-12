@@ -182,3 +182,12 @@ body {
     margin:0 auto;
   }
 }
+
+.title_container {
+  display: flex;
+  justify-content: center; /* 水平居中 */
+}
+
+.box1, .box2 {
+  margin: 0 2px; /* 调整两个盒子之间的间距 */
+}

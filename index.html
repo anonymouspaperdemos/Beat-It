@@ -68,222 +68,276 @@
 
 
   <!-- <section class="section"> -->
-    <div class="hero-body heros">
-      <div class="container">
-        <div id="results-carousel" class="carousel results-carousel">
-          <div class="item itema item-steve">
-            <video poster="" id="steve" preload controls playsinline height="100%">
-              <source src="./resources/teaser/teaser-1.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item itema item-chair-tp">
-            <video poster="" id="chair-tp" preload controls playsinline height="100%">
-              <source src="./resources/teaser/teaser-2.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item itema item-shiba">
-            <video poster="" id="shiba" preload controls playsinline height="100%">
-              <source src="./resources/teaser/teaser-3.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item itema item-fullbody">
-            <video poster="" id="fullbody" preload controls playsinline height="100%">
-              <source src="./resources/teaser/teaser-4.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item itema item-blueshirt">
-            <video poster="" id="blueshirt" preload controls playsinline height="100%">
-              <source src="./resources/teaser/teaser-5.mp4" type="video/mp4">
-            </video>
-          </div>
+  <div class="hero-body heros">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item itema item-steve">
+          <video poster="" id="steve" preload controls playsinline height="100%">
+            <source src="./resources/teaser/teaser-1.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item itema item-chair-tp">
+          <video poster="" id="chair-tp" preload controls playsinline height="100%">
+            <source src="./resources/teaser/teaser-2.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item itema item-shiba">
+          <video poster="" id="shiba" preload controls playsinline height="100%">
+            <source src="./resources/teaser/teaser-3.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item itema item-fullbody">
+          <video poster="" id="fullbody" preload controls playsinline height="100%">
+            <source src="./resources/teaser/teaser-4.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item itema item-blueshirt">
+          <video poster="" id="blueshirt" preload controls playsinline height="100%">
+            <source src="./resources/teaser/teaser-5.mp4" type="video/mp4">
+          </video>
         </div>
       </div>
-
-      <h2 class="subtitle has-text-centered">
-        Beat-synchronized keyframe-controlled dance generation with <span class="dnerf">Beat-It</span>.
-      </h2>
-      <p>
-        To demonstrate the superiority of our method in beat-synchronized keyframe-controlled dance generation, we feed
-        our model with the same music and beats with varying keyframes for dance generation.
-      </p>
-      <p>
-        The left graphs illustrates the mean joint velocities over time, where the dashed lines indicate the beats.
-      </p>
     </div>
-  <!-- </section> -->
 
+    <h2 class="subtitle has-text-centered">
+      Beat-synchronized keyframe-controlled dance generation with <span class="dnerf">Beat-It</span>.
+    </h2>
+    <p>
+      To demonstrate the superiority of our method in beat-synchronized keyframe-controlled dance generation, we feed
+      our model with the same music and beats with varying keyframes for dance generation.
+    </p>
+  </div>
+  <!-- </section> -->
 
   <!-- <section class="section"> -->
-    <div class="container is-max-desktop">
-      <div class="columns is-centered ">
-        <div class="column is-full-width">
-          <div style="margin: auto; width: 250px;line-height: 100%;height: 50px">
-            <div style="float: left">
-              <img src="./resources/icon/abstract_logo.png" style="height: 45px;max-width: 100%;">
-            </div>
-            <div style="margin-left: 10px; padding-left: 20px;">
-              <h2 class="title is-3">Abstract</h2>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <div class="content has-text-justified">
-            <p>
-              Dance, as an art form, fundamentally hinges on the precise synchronization with musical beats. However,
-              achieving aesthetically pleasing dance sequences from music is challenging, with existing methods often
-              falling short in controllability and beat alignment.
-            </p>
-            <p>
-              To address these shortcomings, this paper introduces Beat-It, a novel framework for beat-specific, key
-              pose-guided dance generation. Unlike prior approaches, Beat-It uniquely integrates explicit beat awareness
-              and key pose guidance, effectively resolving two main issues: the misalignment of generated dance motions
-              with musical beats, and the inability to map key poses to specific beats, critical for practical
-              choreography. Our approach disentangles beat conditions from music using a nearest beat distance
-              representation and employs a hierarchical multi-condition fusion mechanism. This mechanism seamlessly
-              integrates key poses, beats, and music features, mitigating condition conflicts and offering rich,
-              multi-conditioned guidance for dance generation. Additionally, a specially designed beat alignment loss
-              ensures the generated dance movements remain in sync with the musical beats. Extensive experiments confirm
-              Beat-It's superiority over existing state-of-the-art methods in terms of beat alignment and motion
-              controllability.
-            </p>
-          </div>
-        </div>
-      </div>
+  <div class="hero-body heros">
+    <video poster="" id="steve" preload controls playsinline height="100%">
+      <source src="./resources/non_aligned_beat/non_aligned_beat.mp4" type="video/mp4">
+    </video>
+
+    <h2 class="subtitle has-text-centered">
+      Arbitrary beat-controlled dance generation with <span class="dnerf">Beat-It</span>.
+    </h2>
+    <p>
+      To illustrate the flexible beat controllability of our method, we present an example where the beat condition is
+      not precisely aligned with the music beats.
+    </p>
+  </div>
   <!-- </section> -->
 
   <section class="section">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered ">
-        <div class="column is-full-width">
-          <div style="margin: auto;width: 250px;line-height: 100%;height: 50px">
-            <div style="float: left">
-              <img src="./resources/icon/method_logo.png" style="height: 45px;max-width: 100%;">
-            </div>
-            <div style="margin-left: 10px; padding-left: 25px;">
-              <h2 class="title is-3">Method</h2>
-            </div>
-          </div>
-          <h2 class="title is-3" align="center"></h2>
-          <div class="columns is-vcentered interpolation-panel">
-            <img src="./resources/method/overview.png" width=auto />
-          </div>
+  <div class="container is-max-desktop">
+    <div class="columns is-centered ">
+      <div class="column is-full-width">
+        <div class="title_container">
+          <div class="box1"><img src="./resources/icon/abstract_logo.png" style="height: 45px;max-width: 100%;"></div>
+          <div class="box2"><h2 class="title is-3">Abstract</h2></div>
         </div>
       </div>
-  </section>
+    </div>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <div class="content has-text-justified">
+          <p>
+            Dance, as an art form, fundamentally hinges on the precise synchronization with musical beats. However,
+            achieving aesthetically pleasing dance sequences from music is challenging, with existing methods often
+            falling short in controllability and beat alignment.
+          </p>
+          <p>
+            To address these shortcomings, this paper introduces Beat-It, a novel framework for beat-specific, key
+            pose-guided dance generation. Unlike prior approaches, Beat-It uniquely integrates explicit beat awareness
+            and key pose guidance, effectively resolving two main issues: the misalignment of generated dance motions
+            with musical beats, and the inability to map key poses to specific beats, critical for practical
+            choreography. Our approach disentangles beat conditions from music using a nearest beat distance
+            representation and employs a hierarchical multi-condition fusion mechanism. This mechanism seamlessly
+            integrates key poses, beats, and music features, mitigating condition conflicts and offering rich,
+            multi-conditioned guidance for dance generation. Additionally, a specially designed beat alignment loss
+            ensures the generated dance movements remain in sync with the musical beats. Extensive experiments confirm
+            Beat-It's superiority over existing state-of-the-art methods in terms of beat alignment and motion
+            controllability.
+          </p>
+        </div>
+      </div>
+    </div>
+    </section>
 
-  <section class="section">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered ">
-        <div class="column is-full-width">
-
-          <div style="margin: auto;width: 250px;line-height: 100%;height: 50px">
-            <div style="float: left">
-              <img src="./resources/icon/comparison_logo.png" style="height: 45px;max-width: 100%;">
+    <!-- <section class="section"> -->
+      <div class="container is-max-desktop">
+        <div class="columns is-centered ">
+          <div class="column is-full-width">
+            <div class="title_container">
+              <div class="box1"><img src="./resources/icon/method_logo.png" style="height: 45px;max-width: 100%;"></div>
+              <div class="box2"><h2 class="title is-3">Method</h2></div>
             </div>
-            <div style="margin-left: 10px; padding-left: 20px;">
-              <h2 class="title is-3">Comparison</h2>
+
+            <h2 class="title is-3" align="center"></h2>
+            <div class="columns is-vcentered interpolation-panel">
+              <img src="./resources/method/overview.png" width=auto />
             </div>
           </div>
+        </div>
+    <!-- </section> -->
 
-          <p>
-            We compare our method with the state-of-the-art methods EDGE, Bailando, and FACT on the AIST++ dataset. Note
-            that only EDGE supports keyframe control while the other two methods do not.
-          </p>
-        
-          <div class="hero-body heros">
-            <div class="container">
-              <div id="results-carousel" class="carousel results-carousel">
-                <div class="item itema item-steve">
-                  <video poster="" id="steve" preload controls playsinline height="100%">
-                    <source src="./resources/comparison/comparison-1.mp4" type="video/mp4">
-                  </video>
-                </div>
-                <div class="item itema item-chair-tp">
-                  <video poster="" id="steve" preload controls playsinline height="100%">
-                    <source src="./resources/comparison/comparison-2.mp4" type="video/mp4">
-                  </video>
-                </div>
-                <div class="item itema item-shiba">
-                  <video poster="" id="steve" preload controls playsinline height="100%">
-                    <source src="./resources/comparison/comparison-3.mp4" type="video/mp4">
-                  </video>
-                </div>
-                <div class="item itema item-fullbody">
-                  <video poster="" id="steve" preload controls playsinline height="100%">
-                    <source src="./resources/comparison/comparison-4.mp4" type="video/mp4">
-                  </video>
-                </div>
-                <div class="item itema item-fullbody">
-                  <video poster="" id="steve" preload controls playsinline height="100%">
-                    <source src="./resources/comparison/comparison-5.mp4" type="video/mp4">
-                  </video>
+    <section class="section">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered ">
+          <div class="column is-full-width">
+            <div class="title_container">
+              <div class="box1"><img src="./resources/icon/comparison_logo.png" style="height: 45px;max-width: 100%;"></div>
+              <div class="box2"><h2 class="title is-3">Comparison</h2></div>
+            </div>
+
+            <p>
+              We compare our method with the state-of-the-art methods EDGE, Bailando, and FACT on the AIST++ dataset.
+              Note
+              that only EDGE supports keyframe control while the other two methods do not.
+            </p>
+
+            <div class="hero-body heros">
+              <div class="container">
+                <div id="results-carousel" class="carousel results-carousel">
+                  <div class="item itema item-steve">
+                    <video poster="" id="steve" preload controls playsinline height="100%">
+                      <source src="./resources/comparison/comparison-1.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="item itema item-chair-tp">
+                    <video poster="" id="steve" preload controls playsinline height="100%">
+                      <source src="./resources/comparison/comparison-2.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="item itema item-shiba">
+                    <video poster="" id="steve" preload controls playsinline height="100%">
+                      <source src="./resources/comparison/comparison-3.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="item itema item-fullbody">
+                    <video poster="" id="steve" preload controls playsinline height="100%">
+                      <source src="./resources/comparison/comparison-4.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="item itema item-fullbody">
+                    <video poster="" id="steve" preload controls playsinline height="100%">
+                      <source src="./resources/comparison/comparison-5.mp4" type="video/mp4">
+                    </video>
+                  </div>
                 </div>
               </div>
             </div>
+            <p>
+              Specifically, Bailando generates key points in Cartesian space, necessitating resource-intensive
+              post-processing for animating 3D characters. To ensure an equitable evaluation, we opted for visualizing
+              skeleton stick figures instead of using its original representation in our comparisons.
+            </p>
           </div>
-          <p>
-            Specifically, Bailando generates key points in Cartesian space, necessitating resource-intensive
-            post-processing for animating 3D characters. To ensure an equitable evaluation, we opted for visualizing
-            skeleton stick figures instead of using its original representation in our comparisons.
-          </p>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="section">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column is-full-width">
-          <div style="margin: auto;width: 250px;line-height: 100%;height: 50px">
-            <div style="float: left">
-              <img src="./resources/icon/ablation_logo.png" style="height: 45px;max-width: 100%;">
+    <!-- <section class="section"> -->
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column is-full-width">
+            <div class="title_container">
+              <div class="box1"><img src="./resources/icon/diff_kf_logo.png" style="height: 45px;max-width: 100%;"></div>
+              <div class="box2"><h2 class="title is-3">Different Ratios of Keyframes Condition</h2></div>
             </div>
-            <div style="margin-left: 10px; padding-left: 20px;">
-              <h2 class="title is-3">Ablation</h2>
-            </div>
-          </div>
-          <div class="hero-body heros">
-            <div class="container">
-              <div id="results-carousel" class="carousel results-carousel">
-                <div class="item itema item-shiba">
-                  <video poster="" id="steve" preload controls playsinline height="200%">
-                    <source src="./resources/ablation/ours-hierarchical_fusion.mp4" type="video/mp4">
-                  </video>
-                </div>
-                <div class="item itema item-chair-tp">
-                  <video poster="" id="steve" preload controls playsinline height="200%">
-                    <source src="./resources/ablation/ours-beat_aware_dilation.mp4" type="video/mp4">
-                  </video>
-                </div>
-                <div class="item itema item-steve">
-                  <video poster="" id="steve" preload controls playsinline height="200%">
-                    <source src="./resources/ablation/ours-beat_alignment_loss.mp4" type="video/mp4">
-                  </video>
+            <div class="hero-body heros">
+              <div class="container">
+                <div id="results-carousel" class="carousel results-carousel">
+                  <div class="item itema item-shiba">
+                    <video poster="" id="steve" preload controls playsinline height="200%">
+                      <source src="./resources/diff_kf/diff_kf-1.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="item itema item-chair-tp">
+                    <video poster="" id="steve" preload controls playsinline height="200%">
+                      <source src="./resources/diff_kf/diff_kf-2.mp4" type="video/mp4">
+                    </video>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    <!-- </section> -->
+
+    <!-- <section class="section"> -->
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column is-full-width">
+            <div class="title_container">
+              <div class="box1"><img src="./resources/icon/diff_conds_logo.png" style="height: 45px;max-width: 100%;"></div>
+              <div class="box2"><h2 class="title is-3">Different Conditions Combinations</h2></div>
+            </div>
+
+            <div class="hero-body heros">
+              <div class="container">
+                <div id="results-carousel" class="carousel results-carousel">
+                  <div class="item itema item-shiba">
+                    <video poster="" id="steve" preload controls playsinline height="200%">
+                      <source src="./resources/diff_conds/diff_conds-1.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="item itema item-chair-tp">
+                    <video poster="" id="steve" preload controls playsinline height="200%">
+                      <source src="./resources/diff_conds/diff_conds-2.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- </section> -->
+
+    <!-- <section class="section"> -->
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column is-full-width">
+            <div class="title_container">
+              <div class="box1"><img src="./resources/icon/ablation_logo.png" style="height: 45px;max-width: 100%;"></div>
+              <div class="box2"><h2 class="title is-3">Ablation</h2></div>
+            </div>
+
+            <div class="hero-body heros">
+              <div class="container">
+                <div id="results-carousel" class="carousel results-carousel">
+                  <div class="item itema item-shiba">
+                    <video poster="" id="steve" preload controls playsinline height="200%">
+                      <source src="./resources/ablation/ours-hierarchical_fusion.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="item itema item-chair-tp">
+                    <video poster="" id="steve" preload controls playsinline height="200%">
+                      <source src="./resources/ablation/ours-beat_aware_dilation.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="item itema item-steve">
+                    <video poster="" id="steve" preload controls playsinline height="200%">
+                      <source src="./resources/ablation/ours-beat_alignment_loss.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- </section> -->
 
 
-  <!-- <section class="section"> -->
+    <!-- <section class="section"> -->
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column is-full-width">
-          <div style="margin: auto;width: 250px;line-height: 100%;height: 50px">
-            <div style="float: left">
-              <img src="./resources/icon/in_the_wild_logo.png" style="height: 45px;max-width: 100%;">
-            </div>
-            <div style="margin-left: 10px; padding-left: 20px;">
-              <h2 class="title is-3">In the Wild</h2>
-            </div>
+          <div class="title_container">
+            <div class="box1"><img src="./resources/icon/in_the_wild_logo.png" style="height: 45px;max-width: 100%;"></div>
+            <div class="box2"><h2 class="title is-3">In the Wild</h2></div>
           </div>
+
           <div class="hero-body heros">
             <div class="container">
               <div id="results-carousel" class="carousel results-carousel">
@@ -308,23 +362,25 @@
           <p>
             To illustrate the generalization ability of our method, we also evaluate our method on in-the-wild music
             videos. We randomly select different samples from the <a
-              href="https://aioz-ai.github.io/AIOZ-GDANCE">AIOZ-GDANCE</a> dataset for evaluation. The left side showcases
+              href="https://aioz-ai.github.io/AIOZ-GDANCE">AIOZ-GDANCE</a> dataset for evaluation. The left side
+            showcases
             the input keyframes, while the generated outcomes are displayed on the right.
           </p>
         </div>
       </div>
     </div>
-  <!-- </section> -->
+    <!-- </section> -->
 
-  <section  class="section">
-    <footer class="footer">
-      <div class="container">
-        <div class="content has-text-centered">
-          <p> Thanks to <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> for the website template.</p>
+    <section class="section">
+      <footer class="footer">
+        <div class="container">
+          <div class="content has-text-centered">
+            <p> Thanks to <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> for the website template.
+            </p>
+          </div>
         </div>
-      </div>
-    </footer>
-  </section>
+      </footer>
+    </section>
 
 
 
